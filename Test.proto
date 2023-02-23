@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package main;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "./";
+
+message Record {
+    google.protobuf.Timestamp published = 1;
+}
